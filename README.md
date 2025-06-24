@@ -16,5 +16,5 @@ You can run ORT locally on the provided Maven-based projects or inspect a pre-ge
 
 To run ORT scans on the provided folders or view the results:
 
-1. See the [official ORT documentation](https://oss-review-toolkit.org/docs/) for installation and scan instructions.
+1. See the [official ORT documentation]([https://oss-review-toolkit.org/docs/](https://oss-review-toolkit.org/ort/docs/getting-started/tutorial)) for installation and scan instructions.
 2. To inspect an existing result, open any `ort-result.yml` file in the ORT Workbench.
