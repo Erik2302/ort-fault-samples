@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.micronova</groupId>
+  <artifactId>workbench-testing-classifier-maven</artifactId>
+  <version>2.0.10</version>
+  <packaging>pom</packaging>
+  <organization>
+    <name>MicroNova AG</name>
+    <url>https://www.micronova.de</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>LicenseRef-scancode-commercial-license</name>
+      <url>https://www.micronova.de</url>
+      <distribution>manual</distribution>
+      <comments>MicroNova Testing Solutions</comments>
+    </license>
+  </licenses>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>1.26.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

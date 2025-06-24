@@ -1,0 +1,541 @@
+---
+repository:
+  vcs:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  vcs_processed:
+    type: ""
+    url: ""
+    revision: ""
+    path: ""
+  config: {}
+analyzer:
+  start_time: "2025-06-18T14:06:23.896030900Z"
+  end_time: "2025-06-18T14:06:25.914448400Z"
+  environment:
+    ort_version: "53.0.0"
+    build_jdk: "21.0.3+9-LTS"
+    java_version: "21.0.3"
+    os: "Windows 10"
+    processors: 24
+    max_memory: 8510242816
+    variables:
+      USERPROFILE: "C:\\Users\\petzenhauser"
+      OS: "Windows_NT"
+      COMSPEC: "C:\\Windows\\system32\\cmd.exe"
+      JAVA_HOME: "C:\\EXAM\\jdk-21.0.3+9"
+    tool_versions: {}
+  config:
+    allow_dynamic_versions: true
+    enabled_package_managers:
+    - "Maven"
+    disabled_package_managers: []
+    package_managers:
+      Yarn2:
+        options:
+          disableRegistryCertificateVerification: "false"
+      Conan:
+        options:
+          lockfileName: "lockfile.lock"
+    skip_excluded: true
+  result:
+    projects:
+    - id: "Maven:de.micronova:workbench-testing-classifier-maven:2.0.10"
+      definition_file_path: ""
+      authors:
+      - "MicroNova AG"
+      declared_licenses:
+      - "LicenseRef-scancode-commercial-license"
+      declared_licenses_processed:
+        spdx_expression: "LicenseRef-scancode-commercial-license"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      homepage_url: ""
+      scope_names:
+      - "compile"
+    - id: "Maven:de.micronova:workbench-testing-maven:2.0.10"
+      definition_file_path: ""
+      authors:
+      - "MicroNova AG"
+      declared_licenses:
+      - "LicenseRef-scancode-commercial-license"
+      declared_licenses_processed:
+        spdx_expression: "LicenseRef-scancode-commercial-license"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      homepage_url: ""
+      scope_names:
+      - "compile"
+    packages:
+    - id: "Maven:com.sun.activation:jakarta.activation:2.0.1"
+      purl: "pkg:maven/com.sun.activation/jakarta.activation@2.0.1"
+      authors:
+      - "Eclipse Foundation"
+      - "Oracle"
+      declared_licenses:
+      - "EDL 1.0"
+      declared_licenses_processed:
+        spdx_expression: "BSD-3-Clause"
+        mapped:
+          EDL 1.0: "BSD-3-Clause"
+      description: "Jakarta Activation"
+      homepage_url: "https://github.com/eclipse-ee4j/jaf/jakarta.activation"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar"
+        hash:
+          value: "828b80e886a52bb09fe41ff410b10b342f533ce1"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1-sources.jar"
+        hash:
+          value: "5204fb651a74c03463d3e587f37c92c3506272e7"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "ssh://git@github.com/eclipse/jaf.git"
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "ssh://git@github.com/eclipse/jaf.git"
+        revision: ""
+        path: ""
+    - id: "Maven:com.sun.xml.bind:jaxb-core:3.0.2"
+      purl: "pkg:maven/com.sun.xml.bind/jaxb-core@3.0.2"
+      authors:
+      - "Eclipse Foundation"
+      - "Oracle Corporation"
+      declared_licenses:
+      - "Eclipse Distribution License - v 1.0"
+      declared_licenses_processed:
+        spdx_expression: "BSD-3-Clause"
+        mapped:
+          Eclipse Distribution License - v 1.0: "BSD-3-Clause"
+      description: "Old JAXB Core module. Contains sources required by XJC, JXC and\
+        \ Runtime modules with dependencies."
+      homepage_url: "https://eclipse-ee4j.github.io/jaxb-ri/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/com/sun/xml/bind/jaxb-core/3.0.2/jaxb-core-3.0.2.jar"
+        hash:
+          value: "e64ef996775103ab051b2ae85d13eb48a48054c2"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/com/sun/xml/bind/jaxb-core/3.0.2/jaxb-core-3.0.2-sources.jar"
+        hash:
+          value: "dc6e97320c61fbc15e5a37d664fa7631c0cc7e4a"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "ssh://git@github.com/eclipse-ee4j/jaxb-ri"
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "ssh://git@github.com/eclipse-ee4j/jaxb-ri.git"
+        revision: ""
+        path: ""
+    - id: "Maven:commons-codec:commons-codec:1.17.0"
+      purl: "pkg:maven/commons-codec/commons-codec@1.17.0"
+      authors:
+      - "Daniel Rall"
+      - "David Graham"
+      - "Henri Yandell"
+      - "Jon S. Stevens"
+      - "Julius Davies"
+      - "Matt Sicker"
+      - "Rob Tompkins"
+      - "Rodney Waldhoff"
+      - "Scott Sanders"
+      - "The Apache Software Foundation"
+      - "Thomas Neidhart"
+      - "Tim OBrien"
+      declared_licenses:
+      - "Apache-2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      description: "The Apache Commons Codec component contains encoder and decoders\
+        \ for\n     various formats such as Base16, Base32, Base64, digest, and Hexadecimal.\
+        \ In addition to these\n     widely used encoders and decoders, the codec\
+        \ package also maintains a\n     collection of phonetic encoding utilities."
+      homepage_url: "https://commons.apache.org/proper/commons-codec/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar"
+        hash:
+          value: "0dbe8eef6e14460e73da07f7b11bf994d6626355"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0-sources.jar"
+        hash:
+          value: "063cf61522da956c3db58ffdbcde99a603bf6f6d"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "https://gitbox.apache.org/repos/asf/commons-codec"
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "https://gitbox.apache.org/repos/asf/commons-codec"
+        revision: ""
+        path: ""
+    - id: "Maven:commons-io:commons-io:2.16.1"
+      purl: "pkg:maven/commons-io/commons-io@2.16.1"
+      authors:
+      - "Henri Yandell"
+      - "Jeremias Maerki"
+      - "Jochen Wiedmann"
+      - "Jukka Zitting"
+      - "Kristian Rosenvold"
+      - "Martin Cooper"
+      - "Matthew Hawthorne"
+      - "Niall Pemberton"
+      - "Nicola Ken Barozzi"
+      - "Rob Oxspring"
+      - "Scott Sanders"
+      - "Stephen Colebourne"
+      - "The Apache Software Foundation"
+      - "dIon Gillard"
+      declared_licenses:
+      - "Apache-2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      description: "The Apache Commons IO library contains utility classes, stream\
+        \ implementations, file filters,\nfile comparators, endian transformation\
+        \ classes, and much more."
+      homepage_url: "https://commons.apache.org/proper/commons-io/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar"
+        hash:
+          value: "377d592e740dc77124e0901291dbfaa6810a200e"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/commons-io/commons-io/2.16.1/commons-io-2.16.1-sources.jar"
+        hash:
+          value: "e0dbaef3c79b647e9c510b40a8366b6765cff249"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "https://gitbox.apache.org/repos/asf/commons-io.git"
+        revision: "rel/commons-io-2.15.1"
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "https://gitbox.apache.org/repos/asf/commons-io.git"
+        revision: "rel/commons-io-2.15.1"
+        path: ""
+    - id: "Maven:jakarta.xml.bind:jakarta.xml.bind-api:3.0.1"
+      purl: "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@3.0.1"
+      authors:
+      - "Eclipse Foundation"
+      - "Oracle Corporation"
+      declared_licenses:
+      - "Eclipse Distribution License - v 1.0"
+      declared_licenses_processed:
+        spdx_expression: "BSD-3-Clause"
+        mapped:
+          Eclipse Distribution License - v 1.0: "BSD-3-Clause"
+      description: "Jakarta XML Binding API"
+      homepage_url: "https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar"
+        hash:
+          value: "5257932df36ff3e4e6de50429dde946490a6a800"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1-sources.jar"
+        hash:
+          value: "571809ee9b4a6d9de6a2991e8c4c9bbc7d1f7418"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "git://github.com/eclipse-ee4j/jaxb-api.git"
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "https://github.com/eclipse-ee4j/jaxb-api.git"
+        revision: ""
+        path: ""
+    - id: "Maven:org.apache.commons:commons-compress:1.26.2"
+      purl: "pkg:maven/org.apache.commons/commons-compress@1.26.2"
+      authors:
+      - "Christian Grobmeier"
+      - "Damjan Jovanovic"
+      - "Emmanuel Bourg"
+      - "Julius Davies"
+      - "Peter Alfred Lee"
+      - "Rob Tompkins"
+      - "Sebastian Bazley"
+      - "Stefan Bodewig"
+      - "The Apache Software Foundation"
+      - "Torsten Curdt"
+      declared_licenses:
+      - "Apache-2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      description: "Apache Commons Compress defines an API for working with\ncompression\
+        \ and archive formats. These include bzip2, gzip, pack200,\nLZMA, XZ, Snappy,\
+        \ traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,\nBrotli, Zstandard and\
+        \ ar, cpio, jar, tar, zip, dump, 7z, arj."
+      homepage_url: "https://commons.apache.org/proper/commons-compress/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2-javadoc.jar"
+        hash:
+          value: "72757ecd9898035533bb945345a14ca4eb152613"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2-sources.jar"
+        hash:
+          value: "bc2be24a34aa0ddb822381227bebc03bedddf10f"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "https://gitbox.apache.org/repos/asf/commons-compress.git"
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "https://gitbox.apache.org/repos/asf/commons-compress.git"
+        revision: ""
+        path: ""
+    - id: "Maven:org.apache.commons:commons-lang3:3.14.0"
+      purl: "pkg:maven/org.apache.commons/commons-lang3@3.14.0"
+      authors:
+      - "Benedikt Ritter"
+      - "Carman Consulting, Inc."
+      - "CollabNet, Inc."
+      - "Duncan Jones"
+      - "Fredrik Westermarck"
+      - "Henri Yandell"
+      - "Joerg Schaible"
+      - "Loic Guibert"
+      - "Matt Benson"
+      - "Niall Pemberton"
+      - "Oliver Heger"
+      - "Paul Benedict"
+      - "Rob Tompkins"
+      - "Robert Burrell Donkin"
+      - "SITA ATS Ltd"
+      - "Steven Caswell"
+      - "The Apache Software Foundation"
+      declared_licenses:
+      - "Apache-2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      description: "Apache Commons Lang, a package of Java utility classes for the\n\
+        \  classes that are in java.lang's hierarchy, or are considered to be so\n\
+        \  standard as to justify existence in java.lang."
+      homepage_url: "https://commons.apache.org/proper/commons-lang/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
+        hash:
+          value: "1ed471194b02f2c6cb734a0cd6f6f107c673afae"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0-sources.jar"
+        hash:
+          value: "9ef3e18356f4ac30b15bfa48c02a7f54b51af382"
+          algorithm: "SHA-1"
+      vcs:
+        type: "Git"
+        url: "http://gitbox.apache.org/repos/asf/commons-lang.git"
+        revision: "rel/commons-lang-3.13.0"
+        path: ""
+      vcs_processed:
+        type: "Git"
+        url: "http://gitbox.apache.org/repos/asf/commons-lang.git"
+        revision: "rel/commons-lang-3.13.0"
+        path: ""
+    - id: "Maven:org.apache.tomcat:tomcat-annotations-api:10.1.5"
+      purl: "pkg:maven/org.apache.tomcat/tomcat-annotations-api@10.1.5"
+      declared_licenses:
+      - "Apache License, Version 2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+        mapped:
+          Apache License, Version 2.0: "Apache-2.0"
+      description: "Annotations Package"
+      homepage_url: "https://tomcat.apache.org/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/tomcat/tomcat-annotations-api/10.1.5/tomcat-annotations-api-10.1.5.jar"
+        hash:
+          value: "dd9d81b20578e84f49044a4ad0bea8d44bcf05be"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/tomcat/tomcat-annotations-api/10.1.5/tomcat-annotations-api-10.1.5-sources.jar"
+        hash:
+          value: "3e155c0d1085e3c35bac0f25e88005666dcc9c5c"
+          algorithm: "SHA-1"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+    - id: "Maven:org.apache.tomcat.embed:tomcat-embed-core:10.1.5"
+      purl: "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.5"
+      declared_licenses:
+      - "Apache License, Version 2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+        mapped:
+          Apache License, Version 2.0: "Apache-2.0"
+      description: "Core Tomcat implementation"
+      homepage_url: "https://tomcat.apache.org/"
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar"
+        hash:
+          value: "21417d3ef8189e2af05aae0a765ad9204d7211b5"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5-sources.jar"
+        hash:
+          value: "c6aabf76942d4e01f24a344c20204a4423570ee5"
+          algorithm: "SHA-1"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+    - id: "Maven:p2.eclipse.plugin:com.mashape.unirest:1.4.9"
+      purl: "pkg:maven/p2.eclipse.plugin/com.mashape.unirest@1.4.9"
+      declared_licenses:
+      - "Apache-2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      description: ""
+      homepage_url: ""
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/p2/eclipse/plugin/com.mashape.unirest/1.4.9/com.mashape.unirest-1.4.9.jar"
+        hash:
+          value: "74edc94cbc253b32b6bc96d728e6c7847dcbd77e"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/p2/eclipse/plugin/com.mashape.unirest/1.4.9/com.mashape.unirest-1.4.9-sources.jar"
+        hash:
+          value: "7d77199adbcb1b622d6b502c783e63c62b374db6"
+          algorithm: "SHA-1"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+    - id: "Maven:p2.eclipse.plugin:org.xmlbeam.xmlprojector:1.4.20"
+      purl: "pkg:maven/p2.eclipse.plugin/org.xmlbeam.xmlprojector@1.4.20"
+      declared_licenses:
+      - "Apache-2.0"
+      declared_licenses_processed:
+        spdx_expression: "Apache-2.0"
+      description: ""
+      homepage_url: ""
+      binary_artifact:
+        url: "http://nexus:8083/repository/EXAM/p2/eclipse/plugin/org.xmlbeam.xmlprojector/1.4.20/org.xmlbeam.xmlprojector-1.4.20.jar"
+        hash:
+          value: "882dc6e56aab3e2d6960fcf932501f3dc9b49665"
+          algorithm: "SHA-1"
+      source_artifact:
+        url: "http://nexus:8083/repository/EXAM/p2/eclipse/plugin/org.xmlbeam.xmlprojector/1.4.20/org.xmlbeam.xmlprojector-1.4.20-sources.jar"
+        hash:
+          value: "69105c178c6f1f2b779bc1f57bbad857d1630eaf"
+          algorithm: "SHA-1"
+      vcs:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+      vcs_processed:
+        type: ""
+        url: ""
+        revision: ""
+        path: ""
+    dependency_graphs:
+      Maven:
+        packages:
+        - "Maven:com.sun.activation:jakarta.activation:2.0.1"
+        - "Maven:com.sun.xml.bind:jaxb-core:3.0.2"
+        - "Maven:commons-codec:commons-codec:1.17.0"
+        - "Maven:commons-io:commons-io:2.16.1"
+        - "Maven:jakarta.xml.bind:jakarta.xml.bind-api:3.0.1"
+        - "Maven:org.apache.commons:commons-compress:1.26.2"
+        - "Maven:org.apache.commons:commons-lang3:3.14.0"
+        - "Maven:org.apache.tomcat.embed:tomcat-embed-core:10.1.5"
+        - "Maven:org.apache.tomcat:tomcat-annotations-api:10.1.5"
+        - "Maven:p2.eclipse.plugin:com.mashape.unirest:1.4.9"
+        - "Maven:p2.eclipse.plugin:org.xmlbeam.xmlprojector:1.4.20"
+        scopes:
+          de.micronova:workbench-testing-classifier-maven:2.0.10:compile:
+          - root: 5
+          de.micronova:workbench-testing-maven:2.0.10:compile:
+          - root: 1
+          - root: 5
+          - root: 7
+          - root: 9
+          - root: 10
+        nodes:
+        - pkg: 4
+        - {}
+        - pkg: 1
+        - pkg: 2
+        - pkg: 3
+        - pkg: 6
+        - pkg: 5
+        - pkg: 9
+        - pkg: 10
+        - pkg: 8
+        - pkg: 7
+        edges:
+        - from: 2
+          to: 0
+        - from: 2
+          to: 1
+        - from: 6
+          to: 3
+        - from: 6
+          to: 4
+        - from: 6
+          to: 5
+        - from: 10
+          to: 9
+scanner: null
+advisor: null
+evaluator: null
+resolved_configuration:
+  package_curations:
+  - provider:
+      id: "RepositoryConfiguration"
+    curations: []
+  - provider:
+      id: "ort-config-curations"
+    curations: []

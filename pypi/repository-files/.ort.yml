@@ -1,0 +1,68 @@
+# Repository configuration file for
+# Side packages EXAM python-dist
+# tests are sometimes part of the wheel package of the distribution for pypi packages.
+# therefor it's not recommended to exclude those by default
+# further descriptions, see at the end of the file
+---
+excludes:
+  scopes:
+  - pattern: "provided"
+    reason: "PROVIDED_DEPENDENCY_OF"
+    comment: "Packages are provided."
+#  - pattern: "test"
+#    reason: "TEST_DEPENDENCY_OF"
+#    comment: "Packages for testing only."
+  - pattern: "devDependencies"
+    reason: "DEV_DEPENDENCY_OF"
+    comment: "Packages for development and testing only."
+# - pattern: "test.*"
+#   reason: "TEST_DEPENDENCY_OF"
+#   comment: "Packages for testing only."
+  paths:
+#  - pattern: "*.test/**"
+#    reason: "TEST_TOOL_OF"
+#    comment: "This directory contains data which is not distributed."
+  - pattern: "Lizenzen"
+    reason: "OTHER"
+    comment: "This directory contains data which is not distributed."
+license_choices:
+  package_license_choices:
+    - package_id: PyPI::pandas:2.2.2
+      license_choices:
+        - given: "BSD-3-Clause OR Apache-2.0"
+          # assumption: the project-developers chose the same license as the project itself
+          choice: "BSD-3-Clause"
+    - package_id: PyPI::numpy:1.26.4
+      license_choices:
+        - given: "BSL-1.0 OR Zlib"
+          # libdivide is dual-licensed under the Boost or zlib licenses.
+          # The NumPy-developers chose the zlib-license, as can be seen in the License.txt at https://github.com/numpy/numpy/tree/v1.26.4/numpy/core/include/numpy/libdivide."
+          choice: "Zlib"
+        - given: "NCSA OR BSD-3-Clause"
+          # This software is dual-licensed under the The University of Illinois/NCSA Open Source License (NCSA) and The 3-Clause BSD License.
+          # assumption: the project-developers chose the same license as the project itself
+          choice: "BSD-3-Clause"
+    - package_id: "PyPI::future:1.0.0"
+      license_choices:
+        - given: "Python-2.0 OR BSD-2-Clause"
+          # src/future/utils/surrogateescape.py:8-8: This code is released under the Python license and the BSD 2-clause license
+          # there is no information in the repository, which license has been chosen for the file
+          choice: "BSD-2-Clause"
+        - given: "Python-2.0 OR GPL-2.0-only"
+          # src/future/backports/urllib/robotparser.py:7-9: 
+          # You can choose between two licenses when using this package:
+          # 1) GNU GPLv2
+          # 2) PSF license for Python 2.2
+          choice: "Python-2.0"
+# Descriptions
+# see also: https://oss-review-toolkit.org/ort/docs/configuration/ort-yml
+#
+# Scope exclude reasons:
+# (see also: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/ScopeExcludeReason.kt)
+# BUILD_TOOL_OF, BUILD_DEPENDENCY_OF, DEV_DEPENDENCY_OF, DOCUMENTATION_DEPENDENCY_OF, PROVIDED_BY, PROVIDED_DEPENDENCY_OF,
+# TEST_TOOL_OF, TEST_DEPENDENCY_OF,RUNTIME_DEPENDENCY_OF
+#
+# Path exclude reasons:
+# (see also: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/PathExcludeReason.kt)
+# BUILD_TOOL_OF, DATA_FILE_OF, DOCUMENTATION_OF, EXAMPLE_OF, OPTIONAL_COMPONENT_OF,
+# OTHER, PROVIDED_BY, TEST_OF, TEST_TOOL_OF

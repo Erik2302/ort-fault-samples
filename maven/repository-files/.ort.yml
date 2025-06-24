@@ -1,0 +1,44 @@
+# Repository configuration file for
+# EXAM alm_synchronizer
+# further descriptions, see at the end of the file
+---
+excludes:
+  scopes:
+  - pattern: "provided"
+    reason: "PROVIDED_DEPENDENCY_OF"
+    comment: "Packages are provided."
+  - pattern: "test"
+    reason: "TEST_DEPENDENCY_OF"
+    comment: "Packages for testing only."
+#  - pattern: "devDependencies"
+#    reason: "DEV_DEPENDENCY_OF"
+#    comment: "Packages for development and testing only."
+# - pattern: "test.*"
+#   reason: "TEST_DEPENDENCY_OF"
+#   comment: "Packages for testing only."
+#  paths:
+#  - pattern: "*.test/**"
+#    reason: "TEST_TOOL_OF"
+#    comment: "This directory contains data which is not distributed."
+#  - pattern: "Lizenzen"
+#    reason: "OTHER"
+#    comment: "This directory contains data which is not distributed."
+license_choices:
+  package_license_choices:
+    - package_id: Maven:p2.eclipse.plugin:com.mashape.unirest:1.4.9
+      license_choices:
+        - given: "EPL-1.0 OR LGPL-2.1-or-later OR GPL-2.0-or-later OR Apache-2.0 OR BSD-3-Clause OR MIT"
+          # assumption: the project-developers chose the same license as the project itself
+          choice: "Apache-2.0"
+# Descriptions
+# see also: https://oss-review-toolkit.org/ort/docs/configuration/ort-yml
+#
+# Scope exclude reasons:
+# (see also: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/ScopeExcludeReason.kt)
+# BUILD_TOOL_OF, BUILD_DEPENDENCY_OF, DEV_DEPENDENCY_OF, DOCUMENTATION_DEPENDENCY_OF, PROVIDED_BY, PROVIDED_DEPENDENCY_OF,
+# TEST_TOOL_OF, TEST_DEPENDENCY_OF,RUNTIME_DEPENDENCY_OF
+#
+# Path exclude reasons:
+# (see also: https://github.com/oss-review-toolkit/ort/blob/main/model/src/main/kotlin/config/PathExcludeReason.kt)
+# BUILD_TOOL_OF, DATA_FILE_OF, DOCUMENTATION_OF, EXAMPLE_OF, OPTIONAL_COMPONENT_OF,
+# OTHER, PROVIDED_BY, TEST_OF, TEST_TOOL_OF
